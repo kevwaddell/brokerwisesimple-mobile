@@ -1,0 +1,49 @@
+button {
+outline: none;	
+}
+
+button.scroll-btn {
+	.pos(absolute);
+	.left(0);
+	width: 100%;
+	.h(3);
+	.pad-all(0);
+	.bg-col(@orange);
+	border: none;
+	text-align: center;
+	z-index: 2;
+	.animated;
+	
+	&:hover, &:active, &:focus {
+	.bg-col(@blk);
+	.col(@wht);
+	}
+	
+	&.scroll-btn-dwn {
+	.bottom(0);	
+	.border-bot(@wht; 0.3);
+	}
+	
+	&.scroll-btn-up {
+	.top(0);	
+	}
+}
+
+button#back2top {
+	.pos(fixed);
+	.left(0);
+	.top(0);
+	z-index: 100;
+	width: 100%;
+	.h(3);
+	.bg-col(@orange);
+	text-align: center;
+	border: none;
+	.animated;
+	.pad-all(0);
+	
+	&:hover, &:active, &:focus {
+	.bg-col(@blk);
+	.col(@wht);
+	}
+}

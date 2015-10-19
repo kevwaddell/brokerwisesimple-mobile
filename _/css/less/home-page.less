@@ -1,0 +1,189 @@
+.hp-section {
+	//.min-h(55);
+	height: 100%;
+	.pos(relative);
+	.pad-top(4);
+	
+	&.bg-col-blk {
+	.bg-col(@blk);	
+	
+		p {
+		.col(@wht);	
+		}
+	}
+	
+	&.bg-col-grayLt {
+	.bg-col(@grayLt50);
+	}
+	
+	&.bg-grid {
+	.bg-img('grid.png');	
+	}
+	
+	.section-icon {
+	.pos(relative);
+	.display(block);
+	.h(7);
+	.w(7);
+	.bg-col(@wht);
+	.border(@gray; 0.5);
+	.rounded(100%);	
+	margin: auto;
+	z-index: 5;
+	.drop-shadow(0, 0, 20px, 0.7);
+	}
+	
+	.hp-txt {
+	text-align: center;
+		p {
+		.font-size(1.2);	
+		.line-h(1.6);
+		.mag-bot(2);
+			&:last-child {
+			.mag-bot(0);	
+			}
+		}
+		
+		h2, h3 {
+		.font-size(2);	
+		.line-h(2);
+		.mag-bot(1);
+		.mag-top(1);
+		}
+		
+		span.col-orange {
+		.col(@orange);	
+		}
+	}
+	
+	.container-fluid {
+	.pos(relative);
+	z-index: 2;	
+	}
+	
+	.col-overlay {
+	.pos(absolute);
+	.top(0);
+	.left(0);
+	.bottom(0);
+	.right(0);	
+	z-index: 1;
+		
+		&.bg-trans-blk {
+		.trans-bg(@blk; 0.7);
+		}
+		
+		&.bg-trans-wht {
+		.trans-bg(@wht; 0.7);	
+		}
+
+	}
+}
+
+#hp-top {
+	height: auto;
+	//.min-h(89);
+	.bg-img('top-banner-img.jpg');
+	.bg-repeat(no-repeat);
+	.bg-size;
+	background-position: center center;
+	.pad-top(11);
+	border-top: none;
+	
+	.hp-txt {
+		p {
+		.col(@wht);
+		}	
+	}
+	
+	button.scroll-btn {
+	.pos(relative);
+	left: auto;
+	bottom: auto;
+	.mag-top(0.3);
+	//width: 100%;
+	}
+
+}
+
+#section-links {
+	text-align: center;
+	width: 100%;
+	.pos(relative);
+	z-index: 2;
+	
+	a {
+	.display(block);
+	.pos(relative);
+	.col(@wht);
+	.trans-bg(@blk; 0.7);
+	.no-text-dec;
+	.h(5);
+	.mag-top(0.3);
+		
+		span {
+		.display(block);	
+		}
+		
+		span.icon {
+		.pos(absolute);
+		.left(0);
+		.top(0);
+		.h(5);
+		.w(5);
+		.trans-bg(@wht; 0.7);
+		}
+		
+		span.title {
+		.font-size(1.6);
+		.line-h(5);
+		.txt-trans;	
+		text-align: center;
+		.pad-left(5);
+		}
+		
+		&:hover, &:active, &:focus {
+			span.icon {
+			.bg-col(@wht);
+			}
+			
+			span.title {
+			.col(@orange);	
+			}
+		}
+
+	}	
+}
+
+#hp-who-we-are {
+z-index: 4;	
+}
+
+#hp-find-out-more {
+height: auto;
+min-height: 100%;
+z-index: 6;	
+	.hp-txt br {
+	display: none;	
+	}
+	
+	.hp-txt a {
+	.col(@orange);
+		&:hover, &:active, &:focus {
+		.col(@blk);
+		}
+	}
+}
+
+#hp-what-we-do {
+.bg-img('what-we-do-img.jpg');
+.bg-repeat(no-repeat);
+.bg-size;
+background-position: center center;
+z-index: 5;	
+
+	button.scroll-btn {
+	z-index: 3;
+	}	
+}
+

@@ -81,7 +81,7 @@
 }
 
 #hp-top {
-	height: auto;
+	//height: auto;
 	//.min-h(89);
 	.bg-img('top-banner-img.jpg');
 	.bg-repeat(no-repeat);
@@ -95,13 +95,16 @@
 		.col(@wht);
 		}	
 	}
-	
-	button.scroll-btn {
-	.pos(relative);
-	left: auto;
-	bottom: auto;
-	.mag-top(0.3);
-	//width: 100%;
+
+	@media screen and (orientation: landscape) {
+	height: auto;	
+		button.scroll-btn {
+		.pos(relative);
+		left: auto;
+		bottom: auto;
+		.mag-top(0.3);
+		}
+
 	}
 
 }
@@ -109,8 +112,15 @@
 #section-links {
 	text-align: center;
 	width: 100%;
-	.pos(relative);
+	.pos(absolute);
+	.bottom(3.3);
+	.left(0);
 	z-index: 2;
+	
+	@media screen and (orientation: landscape) {
+	bottom: auto;
+	.pos(relative);	
+	}
 	
 	a {
 	.display(block);

@@ -5314,7 +5314,6 @@ header#masthead .banner-logo {
   background-color: rgba(255, 255, 255, 0.7);
 }
 #hp-top {
-  height: auto;
   background-image: url(img/top-banner-img.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -5328,17 +5327,30 @@ header#masthead .banner-logo {
 #hp-top .hp-txt p {
   color: #ffffff;
 }
-#hp-top button.scroll-btn {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  margin-top: 3px;
+@media screen and (orientation: landscape) {
+  #hp-top {
+    height: auto;
+  }
+  #hp-top button.scroll-btn {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-top: 3px;
+  }
 }
 #section-links {
   text-align: center;
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 33px;
+  left: 0px;
   z-index: 2;
+}
+@media screen and (orientation: landscape) {
+  #section-links {
+    bottom: auto;
+    position: relative;
+  }
 }
 #section-links a {
   display: block;

@@ -5784,6 +5784,9 @@ figure.alignnone {
 .gform_wrapper li.gsection {
   display: none;
 }
+.gform_wrapper form.two-column {
+  padding-left: 15px;
+}
 .gform_wrapper form.two-column li.hidden-label label {
   display: none;
 }

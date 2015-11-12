@@ -5214,7 +5214,7 @@ p {
 /* Header area */
 /* --------------------------- */
 header#masthead {
-  height: 70px;
+  height: 60px;
   background-color: #e84e1b;
   background-color: rgba(233, 79, 28, 0.5);
   border-bottom: 3px solid #ffffff;
@@ -5225,8 +5225,8 @@ header#masthead {
   z-index: 1000;
 }
 header#masthead .banner-logo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-image: url(img/logo.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -5321,7 +5321,7 @@ header#masthead .banner-logo {
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  padding-top: 110px;
+  padding-top: 80px;
   border-top: none;
 }
 #hp-top .hp-txt p {
